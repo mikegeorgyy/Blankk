@@ -47,7 +47,7 @@ try:
     request = StockBarsRequest(
         symbol_or_symbols=symbols,
         timeframe=TimeFrame(1, TimeFrameUnit.Minute),
-        start=start.to_pydatetime(),
+        start=start,
         end=end,
         feed=DataFeed.IEX,
         limit=10000,
